@@ -1,0 +1,14 @@
+# Ignore environment variables
+.env
+
+# Ignore node modules (they are recreated by `npm install`)
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db

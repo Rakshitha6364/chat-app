@@ -1,0 +1,90 @@
+
+/* Full-page animated background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://images.unsplash.com/photo-1525186402429-b4ff38bedec6?auto=format&fit=crop&w=1920&q=80") no-repeat center center fixed;
+  background-size: cover;
+  animation: floatBackground 20s ease-in-out infinite alternate;
+}
+
+/* Floating background effect */
+@keyframes floatBackground {
+  0% {
+    background-position: center center;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+
+/* Chat container with glass effect */
+.chat-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Chat box */
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Individual messages */
+.message {
+  margin-bottom: 10px;
+}
+
+/* Bot message style */
+.message .bot {
+  color: #ffd700; /* gold */
+  font-weight: bold;
+}
+
+/* User message style */
+.message strong:not(.bot) {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Message input area */
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Send button */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
