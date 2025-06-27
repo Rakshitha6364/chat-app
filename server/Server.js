@@ -164,6 +164,10 @@ io.on("connection", (socket) => {
     console.log("User disconnected");
   });
 });
+app.get("/", (req, res) => {
+  res.send("🚀 Chat App Backend is running");
+});
+
 
 // server.listen(5000, () => {
 //   console.log("🚀 Server running on http://localhost:5000");
