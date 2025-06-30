@@ -1,9 +1,13 @@
-const io = socketIo(server, {
-  cors: {
-    origin: [
-      "https://chat-2fl6ibc3q-rakshuck-8476s-projects.vercel.app",
-      "http://localhost:3000"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"]
-  }
+// src/socket.js
+
+import { io } from "socket.io-client";
+
+// ✅ Use your Render backend URL here (NO trailing slash)
+const BACKEND_URL = "https://chat-app-2-efnv.onrender.com"; // <-- your Render server
+
+const socket = io(BACKEND_URL, {
+  transports: ["websocket"], // helps with CORS and modern deploys
+  withCredentials: true
 });
+
+export default socket;
