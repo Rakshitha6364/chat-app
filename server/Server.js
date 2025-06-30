@@ -32,7 +32,8 @@ const io = socketIo(server, {
   "http://localhost:3000" // keep this for local dev too
 ],
 
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
   },
 });
 function extractCityFromText(text) {
