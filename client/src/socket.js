@@ -1,8 +1,9 @@
 const io = socketIo(server, {
   cors: {
-    const socket = io("https://chat-app-2-efnv.onrender.com");
-
-    methods: ["GET", "POST"],
-  },
+    origin: [
+      "https://YOUR-VERCEL-FRONTEND.vercel.app",
+      "http://localhost:3000"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"]
+  }
 });
-
