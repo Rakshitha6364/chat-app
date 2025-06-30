@@ -27,7 +27,11 @@ mongoose
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: [
+  "https://chat-2fl6ibc3q-rakshuck-8476s-projects.vercel.app",
+  "http://localhost:3000" // keep this for local dev too
+],
+
     methods: ["GET", "POST"],
   },
 });
