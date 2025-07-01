@@ -1,6 +1,6 @@
 
 require("dotenv").config();
-const apiKey = process.env.WEATHER_API_KEY;
+const apiKey = process.env.b15a868129a456f072d01708de240082;
 // const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
 
