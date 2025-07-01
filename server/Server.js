@@ -124,7 +124,7 @@ async function generateReply(userText)
       const city = match && match[2] ? match[2] : "Bangalore";
 
       // const apiKey = "b15a868129a456f072d01708de240082"; // 🔑 Your OpenWeather API key
-      const apiKey = process.env.WEATHER_API_KEY;
+      const apiKey = process.env.b15a868129a456f072d01708de240082;
 
       const res = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
