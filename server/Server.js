@@ -1,6 +1,6 @@
 
 require("dotenv").config();
-const apiKey = process.env.2820714a019546a7b5751707250207;
+const apiKey = process.env.b15a868129a456f072d01708de240082;
 // const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
 
@@ -123,8 +123,8 @@ async function generateReply(userText)
       const match = text.match(/weather (in|at|of)?\s*(.+)/);
       const city = match && match[2] ? match[2] : "Bangalore";
 
-      // const apiKey = "2820714a019546a7b5751707250207"; // 🔑 Your OpenWeather API key
-      const apiKey = process.env.2820714a019546a7b5751707250207;
+      // const apiKey = "b15a868129a456f072d01708de240082"; // 🔑 Your OpenWeather API key
+      const apiKey = process.env.b15a868129a456f072d01708de240082;
 
       const res = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
