@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url("client/public/307803-P8BHP3-470.jpg") no-repeat center center fixed;
+  background: url("/public/307803-P8BHP3-470.jpg") no-repeat center center fixed;
   background-size: cover;
   animation: floatBackground 20s ease-in-out infinite alternate;
 }
