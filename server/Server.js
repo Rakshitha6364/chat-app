@@ -65,7 +65,9 @@ async function generateReply(userText)
     return "I was created by Rakshitha 👩‍💻 as a cool project!";
   } else if (text.includes("thank")) {
     return "You're welcome! 😊 Let me know if you need anything else.";
-  } else if (text.includes("what is your purpose")) {
+  }else if (text.includes("Test")){
+    return "This is a test condition";
+  }else if (text.includes("what is your purpose")) {
     return "I'm here to assist you with your queries and make your day better!";
   } else if (text.includes("tell me a fact")) {
     return "Did you know? The first computer programmer was Ada Lovelace.";
