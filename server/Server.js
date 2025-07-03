@@ -115,8 +115,12 @@ async function generateReply(userText)
   } else if (text.includes("what is your favorite game")) {
     return "Chess is a great game of strategy!";
   }else if (text.includes("time")) {
-    const now = new Date();
-    return `🕒 Current time is: ${now.toLocaleTimeString()}`;
+  const now = new Date();
+  const istTime = now.toLocaleTimeString("en-IN", {
+    timeZone: "Asia/Kolkata",
+  });
+  return `🕒 Current time (IST) is: ${istTime}`;
+
   } else if (text.includes("date")) {
     const now = new Date();
     return `📅 Today's date is: ${now.toDateString()}`;
