@@ -102,7 +102,89 @@ async function generateReply(userText)
     return "I love all colors equally! 🌈";
   } else if (text.includes("what is your favorite food")) {
     return "I don’t eat, but I hear pizza is amazing! 🍕";
-  } else if (text.includes("what is your favorite animal")) {
+  }else if (text.includes("who are you")) {
+  return "I’m Rakshitha, a frontend developer passionate about React.js and building real-time apps.";
+}
+
+else if (text.includes("tell me about your background")) {
+  return "I have experience building web apps using React, Node.js, and MongoDB, and completed a Python internship.";
+}
+
+else if (text.includes("what technologies do you know")) {
+  return "I work with React.js, JavaScript (ES6+), HTML, CSS, Tailwind, Node.js, Express, MongoDB, and Git.";
+}
+
+else if (text.includes("what projects have you worked on")) {
+  return "I’ve built a real-time chat app, a plant disease prediction system, portfolio websites, and more.";
+}
+
+else if (text.includes("tell me about your chat app")) {
+  return "It’s a full-stack real-time app using React, Node.js, Socket.IO, MongoDB, and includes chatbot + weather features.";
+}
+
+else if (text.includes("what is your github")) {
+  return "Here’s my GitHub: https://github.com/rakshitha6364";
+}
+
+else if (text.includes("how can I contact you")) {
+  return "Use the contact form in this portfolio or email me at rakshitha@example.com.";
+}
+
+else if (text.includes("do you use tailwind")) {
+  return "Yes! I love using Tailwind CSS for fast and responsive UI design.";
+}
+
+else if (text.includes("are you available for jobs")) {
+  return "Yes, I'm open to frontend roles and freelance opportunities. Let’s connect!";
+}
+
+else if (text.includes("what is your favorite food")) {
+  return "I don’t eat, but I hear pizza is amazing! 🍕";
+}
+
+else if (text.includes("what is your strongest skill")) {
+  return "React.js is my strongest skill, especially building dynamic UIs with hooks and reusable components.";
+}
+
+else if (text.includes("what is your leaf disease project")) {
+  return "It’s a machine learning project that detects plant leaf diseases and recommends suitable pesticides.";
+}
+
+else if (text.includes("do you know manual testing")) {
+  return "Yes, I’ve studied manual testing concepts like test cases, bug lifecycle, and functional testing.";
+}
+
+else if (text.includes("what database do you use")) {
+  return "I primarily use MongoDB for real-time apps, but I also know SQL for structured data projects.";
+}
+
+else if (text.includes("how do you host your projects")) {
+  return "I use Vercel for frontend deployment and Render for backend APIs with MongoDB Atlas for the database.";
+}
+
+else if (text.includes("do you know restful api")) {
+  return "Yes, I’ve built RESTful APIs using Express.js for features like chat, weather, and user authentication.";
+}
+
+else if (text.includes("tell me about your portfolio")) {
+  return "My portfolio is built using React, Tailwind CSS, and Vite. It features all my projects and contact info.";
+}
+
+else if (text.includes("do you know framer motion")) {
+  return "Yes, I use Framer Motion for smooth scroll animations and UI transitions in React apps.";
+}
+
+else if (text.includes("what is vite")) {
+  return "Vite is a fast frontend build tool I use to create optimized React projects with great performance.";
+}
+
+else if (text.includes("how do you style your projects")) {
+  return "I use Tailwind CSS, plain CSS, and sometimes SCSS depending on project needs. Tailwind is my favorite.";
+}
+
+else if (text.includes("what editor do you use")) {
+  return "I use Visual Studio Code (VS Code) with helpful extensions for React, Tailwind, and Git integration.";
+} else if (text.includes("what is your favorite animal")) {
     return "Cats are adorable! 🐱";
   } else if (text.includes("what is your favorite hobby")) {
     return "I love chatting with you! 💬";
@@ -114,6 +196,10 @@ async function generateReply(userText)
     return "I enjoy action movies! 🎥";
   } else if (text.includes("what is your favorite book genre")) {
     return "I love fantasy books! 📖";
+    else if(text.incldes("tell me one joke ")){
+return "The Road to React" by Robin Wieruch"
+  "Learning React" by Alex Banks & Eve Porcello"
+  "React Design Patterns and Best Practices" by Michele Bertoli"
   } else if (text.includes("what is your favorite game")) {
     return "Chess is a great game of strategy!";
   }else if (text.includes("time")) {
