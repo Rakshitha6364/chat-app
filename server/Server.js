@@ -198,9 +198,8 @@ else if (text.includes("what editor do you use")) {
     return "I love fantasy books! 📖";
       }
 else if(text.incldes("tell me one joke ")){
-return "The Road to React" by Robin Wieruch",
-  "Learning React" by Alex Banks & Eve Porcello",
-  "React Design Patterns and Best Practices" by Michele Bertoli";
+return "The Road to React by Robin Wieruch";
+  
   } else if (text.includes("what is your favorite game")) {
     return "Chess is a great game of strategy!";
   }else if (text.includes("time")) {
