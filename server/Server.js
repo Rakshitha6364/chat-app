@@ -196,7 +196,8 @@ else if (text.includes("what editor do you use")) {
     return "I enjoy action movies! 🎥";
   } else if (text.includes("what is your favorite book genre")) {
     return "I love fantasy books! 📖";
-    else if(text.incldes("tell me one joke ")){
+      }
+else if(text.incldes("tell me one joke ")){
 return "The Road to React" by Robin Wieruch"
   "Learning React" by Alex Banks & Eve Porcello"
   "React Design Patterns and Best Practices" by Michele Bertoli"
